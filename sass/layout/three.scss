@@ -1,0 +1,13 @@
+//three
+.three {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 980px) {
+  .three-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+}

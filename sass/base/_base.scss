@@ -29,7 +29,126 @@ a {
   transition: color .3s;
 }
 
+//background CSS
 .bg-primary {
-  background-color: $primary-color !important;
+  background-color: $bg-primary !important;
 }
 
+.bg-secondary {
+  background-color: $bg-secondary !important;
+}
+
+.bg-success {
+  background-color: $bg-success !important;
+}
+
+.bg-danger {
+  background-color: $bg-danger !important;
+}
+
+.bg-warning {
+  background-color: $bg-warning !important;
+}
+
+.bg-info {
+  background-color: $bg-info !important;
+}
+
+.bg-light {
+  background-color: $bg-light !important;
+}
+
+.bg-dark {
+  background-color: $bg-dark !important;
+}
+
+.bg-white {
+  background-color: $bg-white !important;
+}
+
+//color-text CSS
+.text-primary {
+  background-color: $text-primary !important;
+}
+
+.text-secondary {
+  background-color: $text-secondary !important;
+}
+
+.text-success {
+  background-color: $text-success !important;
+}
+
+.text-danger {
+  background-color: $text-danger !important;
+}
+
+.text-warning {
+  background-color: $text-warning !important;
+}
+
+.text-info {
+  background-color: $text-info !important;
+}
+
+.text-light {
+  background-color: $text-light !important;
+}
+
+.text-dark {
+  background-color: $text-dark !important;
+}
+
+.text-white {
+  background-color: $text-white !important;
+}
+
+//fonts
+.title {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+//btn CSS
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 11px 38px;
+
+  color: $text-light;
+  text-align: center;
+
+  background-color: $text-primary;
+  border: 2px solid $text-primary;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.btn-white {
+  color: $text-primary;
+
+  background-color: $bg-light;
+  border: 2px solid $bg-light;
+}
+
+.btn-primary {
+  color: $text-light;
+
+  background-color: $text-primary;
+  border: 2px solid $text-primary;
+}
+
+//hover
+.btn-white:hover {
+  color: $bg-light;
+
+  background: none;
+  border: 2px solid $bg-white;
+}
+
+//responsive
+@media only screen and (min-width: 450px) {
+  .btn {
+    width: auto;
+  }
+}

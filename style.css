@@ -1,18 +1,260 @@
-/* Error: Undefined variable.
- *    ,
- * 33 |   background-color: $primary-color !important;
- *    |                     ^^^^^^^^^^^^^^
- *    '
- *   sass/base/_base.scss 33:21  @import
- *   sass/main.scss 4:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 33 \2502    background-color: $primary-color !important;\a    \2502                      ^^^^^^^^^^^^^^\a    \2575 \a   sass/base/_base.scss 33:21  @import\a   sass/main.scss 4:9          root stylesheet";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bg-primary {
+  background-color: #472F88 !important;
+}
+
+.bg-secondary {
+  background-color: #E72287 !important;
+}
+
+.bg-success {
+  background-color: #4AC047 !important;
+}
+
+.bg-danger {
+  background-color: #D03333 !important;
+}
+
+.bg-warning {
+  background-color: #FAD449 !important;
+}
+
+.bg-info {
+  background-color: #0075FF !important;
+}
+
+.bg-light {
+  background-color: #E1E1E1 !important;
+}
+
+.bg-dark {
+  background-color: #1A1A1A !important;
+}
+
+.bg-white {
+  background-color: #FFF !important;
+}
+
+.text-primary {
+  background-color: #472F88 !important;
+}
+
+.text-secondary {
+  background-color: #E72287 !important;
+}
+
+.text-success {
+  background-color: #4AC047 !important;
+}
+
+.text-danger {
+  background-color: #D03333 !important;
+}
+
+.text-warning {
+  background-color: #FAD449 !important;
+}
+
+.text-info {
+  background-color: #0075FF !important;
+}
+
+.text-light {
+  background-color: #E1E1E1 !important;
+}
+
+.text-dark {
+  background-color: #1A1A1A !important;
+}
+
+.text-white {
+  background-color: #FFF !important;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 11px 38px;
+  color: #E1E1E1;
+  text-align: center;
+  background-color: #472F88;
+  border: 2px solid #472F88;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-white {
+  color: #472F88;
+  background-color: #E1E1E1;
+  border: 2px solid #E1E1E1;
+}
+
+.btn-primary {
+  color: #E1E1E1;
+  background-color: #472F88;
+  border: 2px solid #472F88;
+}
+
+.btn-white:hover {
+  color: #E1E1E1;
+  background: none;
+  border: 2px solid #FFF;
+}
+
+@media only screen and (min-width: 450px) {
+  .btn {
+    width: auto;
+  }
+}
+@font-face {
+  font-family: "Maax";
+  src: url("Maax.ttf");
+}
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Maax", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.container-small {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.jumbotron {
+  min-height: 580px;
+  background: linear-gradient(rgba(25, 8, 71, 0.8), rgba(25, 8, 71, 0.8)), center/cover no-repeat url(/images/batiment-nf.jpg);
+}
+
+.jumbotron-logo {
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+
+.jumbotron-title {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #FFF;
+  font-weight: 900;
+  font-size: 1.9rem;
+  line-height: 1.2em;
+}
+
+.jumbotron-text {
+  width: 100%;
+  margin-bottom: 45px;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 735px) {
+  .jumbotron {
+    height: 700px;
+  }
+
+  .jumbotron-logo {
+    margin-top: 35px;
+    margin-bottom: 150px;
+  }
+
+  .jumbotron-title {
+    font-size: 4rem;
+  }
+
+  .jumbotron-text {
+    width: 670px;
+  }
+}
+.three {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 980px) {
+  .three-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

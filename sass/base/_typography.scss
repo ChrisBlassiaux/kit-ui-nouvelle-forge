@@ -1,11 +1,17 @@
 
 //typography CSS
+@font-face {
+  font-family: "Maax";
+  src: url("Maax.ttf");
+}
+
+$font-stack: 'Maax';
 
 html {
-  font-size: 16px; 
+  font-size: 18px; 
 }
 
 body {
-  font-family: 'Monserrat', sans-serif;
-  line-height: 1.625;
+  font-family: $font-stack, sans-serif;
+  line-height: 1.5;
 }

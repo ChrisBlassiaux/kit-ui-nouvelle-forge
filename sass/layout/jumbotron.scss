@@ -1,0 +1,50 @@
+// jumbotron
+.jumbotron {
+  min-height: 580px;
+
+  background: linear-gradient(rgba(25, 8, 71, .8), rgba(25, 8, 71, .8)),
+              center / cover no-repeat url(/images/batiment-nf.jpg);
+}
+
+.jumbotron-logo {
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+
+.jumbotron-title { 
+  width: 100%;
+  margin-bottom: 20px;
+
+  color: $text-white;
+  font-weight: 900;
+  font-size: 1.9rem;
+  line-height: 1.2em;
+}
+
+.jumbotron-text { 
+  width: 100%;
+  margin-bottom: 45px;
+
+  color: $text-white;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 735px) {
+  .jumbotron {
+    height: 700px;
+  }
+  
+  .jumbotron-logo {
+    margin-top: 35px;
+    margin-bottom: 150px;
+  }
+  
+  .jumbotron-title { 
+    font-size: 4rem;
+  }
+  
+  .jumbotron-text { 
+    width: 670px;
+  }
+}
