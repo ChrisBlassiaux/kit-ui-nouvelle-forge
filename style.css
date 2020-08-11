@@ -139,6 +139,16 @@ a {
   font-weight: 900;
 }
 
+.title-design::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  height: 10px;
+  width: 100px;
+  background-color: #472F88;
+  border-radius: 6px;
+}
+
 .btn {
   display: inline-block;
   width: 100%;
@@ -255,6 +265,26 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
   }
+}
+.composants-contain {
+  margin: 50px 0;
+}
+
+.composants {
+  padding: 120px 0;
+  width: 330px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 900;
+  background: linear-gradient(rgba(25, 8, 71, 0.8), rgba(25, 8, 71, 0.8));
+  border-radius: 6px;
+}
+
+.composants:before {
+  content: "";
+  height: 330px;
+  width: 330px;
+  background: center/cover no-repeat url(/images/pepiniere.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

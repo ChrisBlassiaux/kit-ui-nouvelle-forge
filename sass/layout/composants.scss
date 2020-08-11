@@ -1,0 +1,23 @@
+.composants-contain {
+  margin: 50px 0;
+}
+
+.composants {
+  padding: 120px 0;
+  width: 330px;
+
+  color: $text-white;
+  text-align: center;
+  font-weight: 900;
+
+  background: linear-gradient(rgba(25, 8, 71, .8), rgba(25, 8, 71, .8));
+  border-radius: 6px;
+}
+
+.composants:before {
+  content: '';
+
+  height: 330px;
+  width: 330px;
+  background: center / cover no-repeat url(/images/pepiniere.jpg);
+}

@@ -109,6 +109,17 @@ a {
   font-weight: 900;
 }
 
+.title-design::after {
+  content: '';
+  display: block;
+  margin-top: 5px;
+  height: 10px;
+  width: 100px;
+
+  background-color: $text-primary;
+  border-radius: 6px;
+}
+
 //btn CSS
 .btn {
   display: inline-block;
