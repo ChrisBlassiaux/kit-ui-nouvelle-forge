@@ -211,7 +211,7 @@ body {
 
 .jumbotron {
   min-height: 580px;
-  background: linear-gradient(rgba(25, 8, 71, 0.8), rgba(25, 8, 71, 0.8)), center/cover no-repeat url(/images/batiment-nf.jpg);
+  background: linear-gradient(rgba(25, 8, 71, 0.8), rgba(25, 8, 71, 0.8)), fixed center/cover no-repeat url(/images/batiment-nf.jpg);
 }
 
 .jumbotron-logo {
@@ -271,20 +271,68 @@ body {
 }
 
 .composants {
-  padding: 120px 0;
-  width: 330px;
+  position: relative;
+  max-height: 330px;
+  width: 100%;
+  margin: 30px 0;
   color: #FFF;
   text-align: center;
   font-weight: 900;
-  background: linear-gradient(rgba(25, 8, 71, 0.8), rgba(25, 8, 71, 0.8));
+  background: #472F88;
   border-radius: 6px;
 }
 
-.composants:before {
-  content: "";
+.composants-contain-title {
   height: 330px;
-  width: 330px;
-  background: center/cover no-repeat url(/images/pepiniere.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.composants-title {
+  padding: 0;
+  z-index: 2;
+}
+
+.composants-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background: top/cover no-repeat url(/images/pepiniere.jpg);
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.composants:hover .composants-img {
+  top: 10px;
+  left: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .composants {
+    margin: 0;
+  }
+
+  .composants-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .composants {
+    margin: 0;
+  }
+
+  .composants-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
