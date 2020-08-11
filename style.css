@@ -99,39 +99,39 @@ a {
 }
 
 .text-primary {
-  background-color: #472F88 !important;
+  color: #472F88 !important;
 }
 
 .text-secondary {
-  background-color: #E72287 !important;
+  color: #E72287 !important;
 }
 
 .text-success {
-  background-color: #4AC047 !important;
+  color: #4AC047 !important;
 }
 
 .text-danger {
-  background-color: #D03333 !important;
+  color: #D03333 !important;
 }
 
 .text-warning {
-  background-color: #FAD449 !important;
+  color: #FAD449 !important;
 }
 
 .text-info {
-  background-color: #0075FF !important;
+  color: #0075FF !important;
 }
 
 .text-light {
-  background-color: #E1E1E1 !important;
+  color: #E1E1E1 !important;
 }
 
 .text-dark {
-  background-color: #1A1A1A !important;
+  color: #1A1A1A !important;
 }
 
 .text-white {
-  background-color: #FFF !important;
+  color: #FFF !important;
 }
 
 .title {
@@ -215,6 +215,7 @@ body {
 }
 
 .jumbotron-logo {
+  width: 70px;
   margin-top: 0px;
   margin-bottom: 90px;
 }
@@ -257,6 +258,10 @@ body {
 .three {
   margin-top: 50px;
   text-align: center;
+}
+
+.three i {
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 980px) {
@@ -334,6 +339,53 @@ body {
     grid-gap: 25px;
   }
 }
+.header {
+  height: 450px;
+  color: #FFF;
+  background-color: #472F88;
+}
+
+.header-title {
+  margin-top: 200px;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4E368F;
+  box-shadow: 0px 9px 27px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar:last-child {
+  margin-right: 0;
+}
+
+.header svg {
+  position: relative;
+  margin-top: -100px;
+  z-index: -1;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item:hover {
+  color: #E72287;
+}
+
 .footer {
   min-height: 255px;
   background-color: #472F88;
