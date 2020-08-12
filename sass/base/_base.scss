@@ -107,7 +107,7 @@ a {
 .title {
   font-size: 1.7rem;
   font-weight: 900;
-}
+} 
 
 .title-design::after {
   content: '';
@@ -118,6 +118,10 @@ a {
 
   background-color: $text-primary;
   border-radius: 6px;
+}
+
+strong {
+  font-weight: 600;
 }
 
 //btn CSS
@@ -155,6 +159,13 @@ a {
 
   background: none;
   border: 2px solid $bg-white;
+}
+
+.btn-primary:hover {
+  color: $bg-primary;
+
+  background: none;
+  border: 2px solid $bg-primary;
 }
 
 //responsive

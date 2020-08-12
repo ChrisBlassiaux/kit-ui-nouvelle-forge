@@ -1,0 +1,36 @@
+.description-img-title {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.description-img {
+  width: 90%;
+  margin-top: 20px;
+
+  background-color: $bg-primary;
+  border-radius: 6px;
+}
+
+.img-style {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 800px) {
+  .description-img-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .description-img {
+    margin-top: -50px;
+  }
+
+  .description-img-title .title {
+    grid-column: 2;
+  }
+}

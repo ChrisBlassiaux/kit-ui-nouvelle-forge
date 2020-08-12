@@ -1,0 +1,31 @@
+.team {
+  width: 100%;
+  margin: 50px 0;
+  
+  text-align: center;
+}
+
+.team-img {
+  width: 100%;
+}
+
+.team-name {
+  margin-top: 10px;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .container-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  .container-team {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+}
