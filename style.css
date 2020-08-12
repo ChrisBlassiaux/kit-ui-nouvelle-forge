@@ -522,6 +522,69 @@ body {
   color: #E72287;
 }
 
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 1260px) {
+  .header svg {
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header svg {
+    margin-top: 0px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    position: relative;
+    height: 45px;
+    width: 60px;
+    cursor: pointer;
+  }
+
+  .middle-bar {
+    display: inline-block;
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #FFF;
+    border-radius: 6px;
+  }
+
+  .middle-bar:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    top: 18px;
+    background-color: #FFF;
+    border-radius: 6px;
+  }
+
+  .middle-bar:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    top: 35px;
+    background-color: #FFF;
+    border-radius: 6px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header svg {
+    margin-top: 20px;
+  }
+}
 input,
 textarea {
   width: 100%;
@@ -550,6 +613,7 @@ textarea {
 
 .plan {
   margin: 100px 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 570px) {
