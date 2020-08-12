@@ -522,6 +522,53 @@ body {
   color: #E72287;
 }
 
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  border: 2px solid #1A1A1A;
+}
+
+.submit {
+  float: right;
+}
+
+.icons-contact {
+  margin-top: 100px;
+}
+
+.block-contact {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.icon-contact {
+  margin-bottom: 15px;
+}
+
+.plan {
+  margin: 100px 0;
+}
+
+@media only screen and (min-width: 570px) {
+  .icons-contact {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  .block-contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-contact {
+    margin-right: 20px;
+  }
+}
 .footer {
   min-height: 255px;
   background-color: #472F88;
