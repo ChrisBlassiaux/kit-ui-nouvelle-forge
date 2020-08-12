@@ -1,0 +1,25 @@
+.description {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.description::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+
+  background-color: $bg-primary;
+
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 750px) {
+  .description {
+    width: 650px;
+  }
+}  

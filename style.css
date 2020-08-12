@@ -194,7 +194,7 @@ html {
 
 body {
   font-family: "Maax", sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .container {
@@ -339,8 +339,32 @@ body {
     grid-gap: 25px;
   }
 }
+.description {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  background-color: #472F88;
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 750px) {
+  .description {
+    width: 650px;
+  }
+}
 .header {
   height: 450px;
+  margin-bottom: 200px;
   color: #FFF;
   background-color: #472F88;
 }
